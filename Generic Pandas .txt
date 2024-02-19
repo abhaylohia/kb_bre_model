@@ -1,0 +1,813 @@
+Generic Pandas: 
+
+What Pandas function is used to read a CSV file into a DataFrame?  [L1]
+a. pd.load_csv()
+b. pd.read_csv()
+c. pd.import_csv()
+d. pd.csv_read()
+
+Answer : Option B
+
+Which method is used to display the basic statistics of a DataFrame, such as mean and standard deviation? [L1]
+a. df.describe()
+b. df.info()
+c. df.stats()
+d. df.summary()
+
+Answer : Option A
+
+What is the purpose of the head(10) method in Pandas? [L1]
+a. Displays the first 5 rows of a DataFrame
+b. Displays the last 10 rows of a DataFrame
+c. Displays a summary of the DataFrame
+d. Displays the first 10 rows of a DataFrame
+
+Answer : Option D
+
+How do you check if a DataFrame contains any missing values?  [L2]
+a. df.isna()
+b. df.check_missing()
+c. df.isnull()
+d. df.has_missing()
+
+Answer : Option C & A
+
+What is the purpose of the iloc attribute in Pandas? [L1]
+a. Used for integer-based indexing and selection
+b. Used for label-based indexing and selection
+c. Used for filtering rows based on a condition
+d. Used for merging DataFrames
+
+Answer : Option A
+
+How can you drop a column 'column_name' from a DataFrame df? [L2]
+a. df.remove_column('column_name')
+b. df.drop('column_name', axis=1)
+c. df.delete_column('column_name')
+d. df.column_name.drop()
+
+Answer : Option B
+
+How do you filter rows in a DataFrame where column 'A' is greater than 10? [L2]
+a. df['A'> 10]
+b. df.filter(A > 10)
+c. df[df['A'] > 10]
+d. df.select(A > 10)
+
+Answer : Option C
+
+What does the value_counts() function do in Pandas? [L1]
+a. Counts the number of unique values in a DataFrame
+b. Counts the occurrences of each unique value in a column
+c. Counts the missing values in a DataFrame
+d. Counts the total number of elements in a DataFrame
+
+Answer : Option B 
+
+
+How can you handle missing values in a column of a DataFrame by removing the corresponding rows?  [L1]
+a. df.dropna(subset=[column_name’])
+b. df.remove_missing(subset=[column_name’])
+c. df.dropna()
+d. df[‘column_name’].dropna()
+
+Answer : Option A
+
+
+Which method is used to write a DataFrame to a CSV file? [L1]
+a. df.save_csv()
+b. df.to_csv()
+c. df.write_csv()
+d. df.export_csv()
+
+Answer : Option B 
+
+In Pandas, what does the term 'axis' refer to? [L1]
+a. Rows
+b. Columns
+c. Both Rows and Columns
+d. None of the above
+
+Answer : Option C 
+
+
+What is the purpose of the isin() method in Pandas? [L1]
+a. Checks for missing values in a DataFrame
+b. Checks if values in a column are present in a given list
+c. Checks if two DataFrames are identical
+d. Checks if a DataFrame is empty
+
+Answer : Option B 
+
+
+What does the nunique() function do in Pandas? [L1]
+a. Counts the number of unique values in a DataFrame
+b. Counts the occurrences of each unique value in a column
+c. Counts the missing values in a DataFrame
+d. Counts the total number of elements in a DataFrame
+
+Answer : Option A 
+
+Which method is used to apply a function element-wise to a DataFrame? [L2]
+a. apply()
+b. map()
+c. transform()
+d. modify()
+
+Answer : Option A ,B
+
+Which of the following is not a valid way to access a specific row in a DataFrame by its label? [L2]
+a. df.loc['label']
+b. df.iloc['label']
+c. df.ix['label']
+d. df.at['label']
+
+Answer : Option B
+
+How can you drop all duplicate rows from a DataFrame? [L1]
+a. df.drop_duplicates()
+b. df.remove_duplicates()
+c. df.drop_dupes()
+d. df.delete_duplicates()
+
+Answer : Option A
+
+Which method is used to fill missing values in a DataFrame with a specific value? [L1]
+a. df.fillna()
+b. df.fill_missing()
+c. df.replace_missing()
+d. df.impute()
+
+Answer : Option A
+
+Which method is used to sort a DataFrame by one or more columns? [L1]
+a. df.sort()
+b. df.sort_values()
+c. df.order()
+d. df.arrange()
+
+Answer : Option B
+
+
+How can you calculate the correlation matrix for a DataFrame? [L1]
+a. df.corr()
+b. df.correlation()
+c. df.calculate_corr()
+d. df.correlation_matrix()
+
+Answer : Option A
+
+Which of the following methods is used to handle outliers in a DataFrame? [L2]
+a. df.remove_outliers()
+b. df.drop_outliers()
+c. df.handle_outliers()
+d. None of the above
+
+Answer : Option D
+
+What is the purpose of the shift() function in Pandas? [L2]
+a. Shifts the index of a DataFrame
+b. Shifts the values of a column by a specified number of periods
+c. Shifts the columns of a DataFrame
+d. Shifts the order of rows in a DataFrame
+
+Answer : Option B
+
+How can you calculate the percentage change for each element in a DataFrame? [L2]
+a. df.calculate_percent_change()
+b. df.percent_change()
+c. df.change_percentage()
+d. df.pct_change()
+
+Answer : Option D
+
+What does the pivot() function do in Pandas? [L1]
+a. Reshapes a DataFrame by specifying new row and column indices
+b. Aggregates data based on specified columns
+c. Transposes the rows and columns of a DataFrame
+d. Creates a pivot table with summarized data
+
+Answer : Option A
+
+
+Which method is used to calculate the cumulative product of elements in a DataFrame? [L1]
+a. df.cumprod()
+b. df.calculate_prod()
+c. df.running_product()
+d. df.product_cumulative()
+
+Answer : Option A
+
+
+What is the purpose of the cut() function in Pandas? [L1]
+a. Cuts a DataFrame into specified bins
+b. Cuts a column into specified bins
+c. Cuts outliers from a DataFrame
+d. Cuts missing values from a DataFrame
+
+Answer : Option B
+
+How can you handle categorical data in a DataFrame using Pandas? [L1]
+a. df.convert_categorical()
+b. df.handle_categorical()
+c. df.categorical()
+d. df.astype('category')
+
+Answer : Option D
+Explain the difference between loc and iloc in Pandas. [L1]
+a) loc is used for label-based indexing, while iloc is used for integer-based indexing.
+b) loc is used for integer-based indexing, while iloc is used for label-based indexing.
+c) Both loc and iloc are used interchangeably for label-based and integer-based indexing.
+d) loc and iloc are used for selecting columns in Pandas.
+Answer : Option A
+Consider a DataFrame df with a column 'Amount' containing both positive and negative values. How can you calculate the sum of positive values and the sum of negative values in the 'Amount' column in a single line of code? [L3]
+a) df['Amount'].sum() if x > 0 else 0 for x in df['Amount']
+b) df['Amount'].apply(lambda x: x if x > 0 else 0).sum(), df['Amount'].apply(lambda x: x if x < 0 else 0).sum()
+c) df['Amount'].sum() > 0, df['Amount'].sum() < 0
+d) df['Amount'].groupby(df['Amount'] > 0).sum()
+Answer : Option B
+You have a DataFrame with a column 'Date' containing dates in string format (e.g., '2022-01-15'). How can you convert the 'Date' column to a datetime format in Pandas? [L2]
+a) df['Date'] = pd.to_datetime(df['Date'], format='%Y/%m/%d')
+b) df['Date'] = pd.datetime(df['Date'])
+c) df['Date'] = df['Date'].as_datetime()
+d) df['Date'] = pd.to_datetime(df['Date'])
+Answer : Option D
+
+Suppose you have a DataFrame with a column 'Text' containing sentences. How can you create a new column 'Word_Count' representing the number of words in each sentence? [L3]
+a) df['Word_Count'] = df['Text'].apply(len)
+b) df['Word_Count'] = df['Text'].str.split().apply(len)
+c) df['Word_Count'] = df['Text'].count_words()
+d) df['Word_Count'] = len(df['Text'].split())
+Answer : Option B
+
+How can you handle categorical data efficiently in Pandas? [L3]
+a) Use the get_dummies function to create dummy variables
+b) Use the astype('category') method to convert a column to categorical
+c) Use the pd.Categorical constructor to create a categorical column
+d) Use the pd.get_categical function to create a categorical column
+Answer : A&B&C
+
+Suppose you have a DataFrame with a column 'Scores' containing numeric values. How can you normalize the 'Scores' column to have values between 0 and 1? [L3]
+a) df['Scores'] = (df['Scores'] - df['Scores'].min()) / (df['Scores'].max() - df['Scores'].min())
+b) df['Scores'] = df['Scores'].normalize()
+c) df['Scores'] = df['Scores'].apply(lambda x: x / df['Scores'].max())
+d) df['Scores'] = df['Scores'].scaling(0, 1)
+Answer : Option A
+
+Given a DataFrame df with a column 'Category' containing categorical values, how can you encode the categorical values using numerical labels? [L3]
+a) df['Category'] = df['Category'].encode_labels()
+b) df['Category'] = df['Category'].cat.codes
+c) df['Category'] = df['Category'].label_encode()
+d) df['Category'] = df['Category'].map_labels()
+Answer : Option B
+
+
+Python & Pandas Coding Based:
+
+
+1.  [L1]
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+df['C'] = df['A'] + df['B']
+result = df.groupby('C')['A'].mean()
+print(result)
+
+What will be the output of the code?
+a. A new DataFrame with grouped and averaged values
+b. A Series with the mean of 'A' for each group formed by 'C'
+c. Error due to mismatched data types
+d. Error due to incorrect use of groupby
+
+Answer : Option B
+
+
+
+2. [L3]
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+df = df.apply(lambda x: x * 2)
+result = df.sum(axis=1)
+print(result)
+
+What will be the output of the code?
+a. A DataFrame with each element doubled and summed along rows
+b. A DataFrame with each column doubled and summed along columns
+c. A Series with the sum of each row in the original DataFrame
+d. Error due to incorrect use of apply
+
+Answer : Option C
+
+
+3. [L2]
+df = pd.DataFrame({'A': ['foo', 'bar', 'baz', 'foo'], 'B': [1, 2, 3, 4]})
+result = df.pivot_table(index='A', columns='B', aggfunc='count', fill_value=0)
+print(result)
+
+What will be the output of the code?
+a. A pivot table with counts of occurrences, filled with 0 for missing values
+b. Error due to incorrect use of pivot_table
+c. A pivot table with the mean of 'B' values for each 'A' group
+d. A pivot table with the sum of 'B' values for each 'A' group
+
+Answer : Option A
+
+
+4. [L3]
+df = pd.DataFrame({'A': ['apple', 'banana', 'apple', 'orange'],
+                   'B': [1, 2, 3, 4]})
+result = df.groupby('A')['B'].transform(lambda x: x - x.mean())
+print(result)
+
+What will be the output of the code?
+a. A Series with the result of subtracting the mean of 'B' for each group from each 'B' value
+b. Error due to incorrect use of transform
+c. A DataFrame with 'A' and a new column representing the transformation
+d. A Series with the mean of 'B' for each group
+
+Answer : Option A
+
+
+5. [L2]
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+df['C'] = df['A'] * df['B']
+result = df.drop_duplicates(subset=['C'])
+print(result)
+
+What will be the output of the code?
+a. The original DataFrame with duplicate rows removed based on column 'C'
+b. A DataFrame containing only the first occurrence of each value in column 'C'
+c. Error due to incorrect use of drop_duplicates
+d. A DataFrame containing only the last occurrence of each value in column 'C'
+
+Answer : Option B
+
+6.  [L2]
+values = [1, 2, 3, 4, 5]
+squares = [x**2 for x in values if x % 2 == 0]
+print(squares)
+
+What will be the output of the code?
+a. [4, 16]
+b. [1, 4, 9, 16, 25]
+c. [1, 9, 25]
+d. Error due to incorrect use of list comprehension
+
+Answer : Option A
+
+
+7. [L2]
+words = ['hello', 'world']
+lengths = {word: len(word) for word in words}
+print(lengths)
+
+What will be the output of the code?
+a. {'hello': 5, 'world': 5}
+b. {'hello': 5, 'world': 5, 5: 'world'}
+c. {'h': 5, 'w': 5}
+d. Error due to incorrect use of dictionary comprehension
+
+Answer : Option A
+
+
+8. [L3]
+data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flat_list = [item for sublist in data for item in sublist]
+print(flat_list)
+
+What will be the output of the code?
+a. [1, 2, 3, 4, 5, 6, 7, 8, 9]
+b. [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+c. [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+d. Error due to incorrect use of list comprehension
+
+Answer : Option A
+
+
+9. [L2]
+values = [1, 2, 3, 4, 5]
+result = [x * y for x in values for y in values if x != y]
+print(result)
+
+What will be the output of the code?
+a. [ 2, 3, 4, 5, 2, 6, 8, 10, 3, 6, 12, 15, 4, 8, 12,  20, 5, 10, 15, 20]
+b. [1, 4, 9, 16, 25]
+c. [2, 4, 6, 8, 10]
+d. Error due to incorrect use of list comprehension
+
+Answer : Option A
+
+
+10. [L1]
+x = 5
+y = 7
+result = x > y or x < y and x == y
+print(result)
+
+What will be the output of the code?
+a. True
+b. False
+c. Error
+d. None
+
+Answer: B 
+
+11. [L2]
+numbers = [1, 2, 3, 4, 5]
+result = numbers[::-1][::2]
+print(result)
+
+What will be the output of the code?
+a. [5, 3, 1]
+b. [5, 4, 3, 2, 1]
+c. [1, 3, 5]
+d. [1, 2, 3, 4, 5]
+
+Answer : Option A
+
+
+12. [L2]
+import pandas as pd
+data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
+df = pd.DataFrame(data)
+df = df * 2
+print(df)
+
+What will be the output of the code?
+a. A DataFrame with values doubled
+b. A DataFrame with columns 'A' and 'B' multiplied by 2
+c. Error due to invalid multiplication operation
+d. A DataFrame with NaN values
+
+Answer : Option B
+
+13. [L2]
+import pandas as pd
+data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
+df = pd.DataFrame(data)
+result = df['A'] > 2
+print(result)
+
+What will be the output of the code?
+a. A Series of boolean values [False, False, True]
+b. A DataFrame with values greater than 2
+c. Error due to invalid comparison operation
+d. A Series of boolean values [True, True, True]
+
+Answer : Option A
+
+
+14. [L2]
+import pandas as pd
+data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
+df = pd.DataFrame(data)
+result = df['A'] + df['B']
+print(result)
+
+What will be the output of the code?
+a. A Series with the sum of values in columns 'A' and 'B'
+b. A DataFrame with columns 'A' and 'B' concatenated
+c. Error due to invalid addition operation
+d. A Series with values [5, 7, 9]
+
+Answer : Option D
+
+
+15. [L3]
+import pandas as pd
+data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
+df = pd.DataFrame(data)
+result = df.loc[df['A'] > 1, 'B']
+print(result)
+
+What will be the output of the code?
+a. A Series with values in column 'B' where corresponding values in column 'A' are greater than 1
+b. A DataFrame with rows where values in column 'A' are greater than 1 and column 'B'
+c. Error due to invalid indexing operation
+d. A Series with values [5, 6]
+
+Answer : Option D
+
+
+Format - 
+
+Question 1
+Answer 1
+Answer 2
+Answer 3
+Answer 4
+
+Correct answer -  2 (or 2,3 in case of multiple choice)
+
+
+Dheeraj’s Question
+
+Q1. What will be the output of the following code? [L3]
+lst = [1,2,3,4,5,6,7,8]
+for i in lst:
+    lst.remove(i) 
+print(lst)
+
+[1,2,3,4,5,6,7,8]
+[]
+[2,4,6,8]
+[1,3,5,7]
+
+Answer : Option 3 
+
+Q2. What will be the output of the following code? [L2]
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+c = [x for x in a if x not in b]
+print(c)
+
+[1,6]
+[1,2,3,4]
+[3,4,5,6]
+[1,2]
+
+Answer : Option 4
+
+
+
+
+
+
+Varun’s Questions
+
+Q1 - We have a Pandas DataFrame df with the following columns - [L3]
+‘mobilephone’, ’emailaddress’, ‘hometown’ ,’dateofbirth’
+ We wish to rename the columns in camelcase as such - 
+‘mobilePhone’, ’emailAddress’, ‘homeTown’ ,’dateOfBirth’
+
+Which of the following methods can not be used to achieve this?
+1 - df[[‘mobilePhone’, ’emailAddress’, ‘homeTown’ ,’dateOfBirth’]]
+2 - df.columns = [‘mobilePhone’, ’emailAddress’, ‘homeTown’ ,’dateOfBirth’]
+3 - df = df.rename(columns= {“mobilephone”:”mobilePhone”, “’emailaddress’”:”’emailAddress’”, “‘hometown’”:”‘homeTown’”,”’dateofbirth’”:”’dateOfBirth’”})
+4 - All above can be used
+
+Correct Answer - Option 1
+
+Q2 - What will be the output for the following code if df1 is the dataframe given below? [L3]
+
+df1 = df1.reset_index(drop=True,inplace=True)
+print(df1)
+
+1 - 
+2 - 
+3 - 
+4 - None
+
+Correct Answer - Option 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rohan’s Questions
+
+
+Q1. Consider a Pandas DataFrame named `df` with columns 'Date', 'Revenue', and 'Product'. How can you group the data by both 'Date' and 'Product' and calculate the sum of 'Revenue' for each group?[L2]
+
+A) df.groupby(['Date', 'Product']).sum()
+B) df.aggregate('sum', by=['Date', 'Product'])
+C) df.group(['Date', 'Product']).sum('Revenue')
+D) df.pivot_table(values='Revenue', index=['Date', 'Product'], aggfunc='sum')
+
+
+Answer: D) df.pivot_table(values='Revenue', index=['Date', 'Product'], aggfunc='sum')
+
+
+Q2. You have a DataFrame `df` with a column 'Sales' containing numerical values. How can you calculate the cumulative sum of 'Sales' for each group defined by the 'Category' column?[L2]
+
+A) df['Cumulative_Sum'] = df.groupby('Category')['Sales'].cumsum()
+B) df['Cumulative_Sum'] = df['Sales'].cumsum().groupby(df['Category'])
+C) df['Cumulative_Sum'] = df.groupby('Category')['Sales'].agg('cumsum')
+D) df['Cumulative_Sum'] = df['Sales'].cumsum().apply(lambda x: x if df['Category'].shift() == df['Category'] else 0)
+
+Answer: A) df['Cumulative_Sum'] = df.groupby('Category')['Sales'].cumsum()
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PRERNA’s Questions
+
+
+1 . What is the syntax for join on index ?  [L2]
+pd.join(df1,df2,left_on = True,right_on = True)
+pd.merge(df1,df2,on = ‘index’,how = ‘left’)
+pd.merge(df1,df2,left_on = True,right_on = True)
+pd.join(df1,df2,on = ‘index’,how = ‘left’)
+
+Answer: C) pd.merge(df1,df2,left_on = True,right_on = True)
+
+
+2. What are the number of arguments that can be passed in the Python lambda function? [L2]
+Only 1
+2
+Less than 5 
+Any number 
+
+Answer: D) Any number
+
+
+
+
+
+Aditya Questions:
+
+Q1) = Given the following three lists, how would you create a new list that matches the desired output printed below? [L3]
+
+fruits = ['Apples', 'Oranges', 'Bananas']
+quantities = [5, 3, 4]
+prices = [1.50, 2.25, 0.89]
+
+#Desired output
+[('Apples', 5, 1.50),
+('Oranges', 3, 2.25),
+('Bananas', 4, 0.89)]
+
+
+A) output = []
+
+fruit_tuple_0 = (first[0], quantities[0], price[0])
+output.append(fruit_tuple)
+
+fruit_tuple_1 = (first[1], quantities[1], price[1])
+output.append(fruit_tuple)
+
+fruit_tuple_2 = (first[2], quantities[2], price[2])
+output.append(fruit_tuple)
+
+return output
+
+B) 
+i = 0
+output = []
+for fruit in fruits:
+    temp_qty = quantities[i]
+    temp_price = prices[i]
+    output.append((fruit, temp_qty, temp_price))
+    i += 1
+return output
+
+C) 
+groceries = zip(fruits, quantities, prices)
+return groceries
+
+>>> [
+('Apples', 5, 1.50),
+('Oranges', 3, 2.25),
+('Bananas', 4, 0.89)
+]
+
+
+D)
+i = 0
+output = []
+for fruit in fruits:
+    for qty in quantities:
+        for price in prices:
+            output.append((fruit, qty, price))
+    i += 1
+return output
+
+Answer B
+
+
+Q2) What does this function print? [L2]
+
+def print_alpha_nums(abc_list, num_list):
+    for char in abc_list:
+        for num in num_list:
+            print(char, num)
+   
+
+print_alpha_nums(['a', 'b', 'c'], [1, 2, 3])
+
+A) 
+a 1
+a 2
+a 3
+b 1
+b 2
+b 3
+c 1
+c 2
+c 3
+
+B) ['a', 'b', 'c'], [1, 2, 3]
+
+C)
+aaa
+bbb
+ccc
+111
+222
+333
+
+D)
+a 1 2 3
+b 1 2 3
+c 1 2 3
+
+Answer A
+
+
+
+
+
+Abhay’s Questions
+
+From this table 
+
+
+
+
+
+
+
+Question: What does the following code do? [L2]
+time_df['Rolling_Sum'] = time_df.sort_values(by='Date').groupby('Date')['Value'].cumsum()
+a) Calculates the sum of 'Value' for each date and assigns it to a new column 'Rolling_Sum'.
+b) Creates a rolling sum of 'Value' for each date.
+c) Sorts the DataFrame by 'Date' and calculates the cumulative sum of 'Value' for each date.
+d) Filters rows where 'Value' is greater than 15.
+Answer: c) Sorts the DataFrame by 'Date' and calculates the cumulative sum of 'Value' for each date.
+2.  From this df
+
+data = {'ID': [1, 2, 3, 4, 5], 'Values': ['A', 'B', 'A', 'C', 'B']}
+df = pd.DataFrame(data)
+Question: What does the following code do? [L2]
+result = df.groupby('Values')['ID'].apply(lambda x: x if len(x) > 1 else None)
+a) Returns the 'ID' values for each 'Values' group if the group has more than one element, otherwise, returns None.
+b) Creates a new column with the 'ID' values if the corresponding 'Values' group has more than one element, otherwise, returns None.
+c) Raises an error because the lambda function is not applied correctly.
+d) Returns the 'ID' values for each 'Values' group.
+Answer: a) Returns the 'ID' values for each 'Values' group if the group has more than one element, otherwise, returns None.
+3. What does the following code do? [L2]
+	result =     df.groupby(df['Date'].diff().dt.days.gt(1).cumsum())['Date'].count()
+a) Counts the number of days between consecutive dates in the 'Date' column.
+b) Count the number of times the difference between consecutive dates is greater than 1.
+c) Calculates the cumulative sum of the 'Date' column for each group where the difference between consecutive dates is greater than 1.
+d) Raises an error because the lambda function is not applied correctly.
+Answer: b) Counts the number of times the difference between consecutive dates is greater than 1.
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
